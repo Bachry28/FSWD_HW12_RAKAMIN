@@ -1,10 +1,9 @@
 
 body{
   font-family: sans-serif;
-  margin: 20%;
+  margin: 2%;
   padding: 0;
 }
-
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -13,48 +12,57 @@ code {
 
 * {
   box-sizing: border-box;
+  position: relative;
 }
 
 .square {
-  width: 35px;
-  height: 35px;
-  border: 1px solid black;
-  background-color: #3498db; /* Misalnya, gunakan warna latar belakang yang lebih menarik */
+  width: 105px;
+  height: 105px;
+  border: 3px solid black;
+  background-color: #3498db; 
   font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.2s ease; /* Efek hover */
+  transition: background-color 0.2s ease; 
 }
 
 .square:hover {
-  background-color: #f39c12; /* Warna latar belakang saat hover */
+  background-color: #f39c12; 
 }
 
 .board{
   display: flex;
   flex-wrap: wrap;
-  width: 105px;
-  height: 105px;
+  width: 315px;
+  height: 315px;
 }
 
 .status {
-  margin-bottom: 15px;
-  color: #3498db; /* Ganti warna teks status */
-  font-size: 18px; /* Sesuaikan ukuran teks */
+  margin-bottom: 30px;
+  display: inline;
+  position: relative;
+  color: #3498db; 
+  font-size: 36px; 
   font-weight: bold;
 }
 
-.game{
+.reset-button {
+  background-color: #ff5733;
+  color: white;
+  border: none; 
+  padding: 10px 20px; 
+  cursor: pointer;
+  font-weight: bold;
+  position: relative;
+ 
+}
+
+.game {
   display: flex;
+  flex-direction: column; 
+  align-items: center;
 }
 
 
-@media (max-width: 768px) {
-  .square {
-    width: 25px; /* Sesuaikan ukuran kotak untuk layar kecil */
-    height: 25px;
-  }
-  .board {
-    width: 80px; /* Sesuaikan lebar board untuk layar kecil */
-    height: 80px;
-  }
-}
+
+
+
